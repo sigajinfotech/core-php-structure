@@ -39,4 +39,4 @@ $array = array(
 	)
 );
 </pre>
-$result = $DAO->insert($array);
+$result = $DAO->update($array);
