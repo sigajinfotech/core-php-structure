@@ -5,6 +5,7 @@ $sql = "SELECT * FROM users";
 $users = $DAO->select($sql);
 
 # INSERT query execution sample code. 
+<pre>
 $array = array(
 	'table_name' => 'users',
 	'values' => array(
@@ -13,9 +14,11 @@ $array = array(
 		'created_at' => date('Y-m-d H:i:s',time())
 	)
 );
+</pre>
 $result = $DAO->insert($array);
 
 # UPDATE query execution sample code. 
+<pre>
 $array = array(
 	'table_name' => 'users',
 	'values' => array(
@@ -35,4 +38,5 @@ $array = array(
 		)
 	)
 );
+</pre>
 $result = $DAO->insert($array);
